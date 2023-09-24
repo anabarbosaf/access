@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Script</h1>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="Ford"
+  agent-id="e8901840-0e9d-447b-b868-24ee6e313aa4"
+  chat-icon="https://cdn-icons-png.flaticon.com/512/3782/3782270.png?ga=GA1.1.1145604812.1695330336";
+  language-code="pt-br"
+  
+></df-messenger>
+<style>
+
+df-messenger{
+	height: 200px;
+	--df-messenger-bot-message: #000000;
+	--df-messenger-button-titlebar-color: #5f066c;
+	--df-messenger-chat-backgroud-color: #000000;
+	--df-messenger-font-color: white;
+	--df-messenger-send-icon: #878fac;
+	--df-messenger-user-message: #ef037f;
+	--df-messenger-backgroud-color: #000000;
+	--df-messenger-image-width: 50px;
+	--df-messenger-minimized-chat-close-icon-color: #000000;
+
+	}
+</style>
+
+
+</body>
+</html>
