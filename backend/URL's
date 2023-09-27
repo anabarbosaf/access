@@ -1,0 +1,88 @@
+Carros
+ 
+GET (buscar tds)  http://localhost:8080/mobilidade/api/carros
+GET (buscar por id)  http://localhost:8080/mobilidade/api/carros/-digitarId-
+POST (novo carro)  http://localhost:8080/mobilidade/api/carros
+
+{
+  "id": 0,
+  "placa": "CK5432",
+  "ano": 2017,
+  "quantLugares": 4,
+  "estiloCarro": "SILENCIOSO" "SEM_RESTRICOES" "MAIS_ESPACOSO_COM_RAMPAS_E_APOIOS"
+}
+
+PUT  (att) http://localhost:8080/mobilidade/api/carros/-digitarId-
+
+DELETE http://localhost:8080/mobilidade/api/carros/-digitarId-
+==============================================================================================
+Motorista
+
+GET (buscar tds)  http://localhost:8080/mobilidade/api/motoristas
+GET (buscar por id)  http://localhost:8080/mobilidade/api/motoristas/-digitarId-
+POST (novo motorista)
+
+{
+  "id": 0,
+  "nome": "Mariana Monteiro",
+  "email": "mariana56@gmail.com",
+  "cpf": "765544678",
+  "senha": "KLTT334",
+  "cnh": "7483937578",
+  "carro": {
+    "id": 62,
+    "placa": "LKY6898",
+    "ano": 2023,
+    "quantLugares": 5,
+    "estiloCarro": "SILENCIOSO"
+  }
+}
+
+PUT (att) http://localhost:8080/mobilidade/api/motoristas/-digitarId-
+
+DELETE  http://localhost:8080/mobilidade/api/motoristas/-digitarId-
+
+=============================================================================================
+Passageiro
+
+GET (buscar tds)  http://localhost:8080/mobilidade/api/passageiros
+GET (buscar por id)  http://localhost:8080/mobilidade/api/passageiros/-digitarId-
+POST (novo passageiro)
+{
+  "id": 0,
+  "nome": "string",
+  "email": "string",
+  "cpf": "string",
+  "senha": "string",
+  "telefone": "string",
+  "tipoDeficiencia": "DEFICIENCIA_MOTORA" "DEFICIENCIA_MENTAL" "DEFICIENCIA_INTELECTUAL" "DEFICIENCIA_VISUAL" "DEFICIENCIA_AUDITIVA"
+}
+
+PUT  (att) http://localhost:8080/mobilidade/api/passageiros/-digitarId-
+
+DELETE  http://localhost:8080/mobilidade/api/passageiros/-digitarId-
+=============================================================================================
+Viagens
+
+GET (busca tds viagens pendentes) http://localhost:8080/mobilidade/api/viagens/pendentes
+
+GET (busca tds viagens aceitas) http://localhost:8080/mobilidade/api/viagens/pendentes
+
+GET (busca tds viagens pendentes Resumido)http://localhost:8080/mobilidade/api/viagens/pendentes-info
+
+POST (nova viagem) http://localhost:8080/mobilidade/api/viagens/solicitar
+
+{
+  "passageiro": {
+    "cpf": "78876651594"
+  },
+  "localPartida": "Primeiro de Maio- Osasco",
+  "localDestino": "Novo Horizonte- Osasco"
+}
+
+PUT (att)  http://localhost:8080/mobilidade/api/viagens/45
+
+DELETE http://localhost:8080/mobilidade/api/viagens/-digitarId-
+
+ACEITAR POST http://localhost:8080/mobilidade/api/viagens/aceitar/61?cnh=7483937578
+id da viagem pendente e CNH do motorista
