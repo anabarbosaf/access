@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALFA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+<script src="https://static.dialogflow.com/common/messenger/webcomponentsjs/2.1.3/custom-elements-es5-adapter.js"></script><script src="https://static.dialogflow.com/common/messenger/webcomponentsjs/2.1.3/webcomponents-loader.js"></script><style type="text/css">:root{--df-messenger-bot-message:#fff;--df-messenger-button-titlebar-color:#42a5f5;--df-messenger-button-titlebar-font-color:#fff;--df-messenger-chat-background-color:#fafafa;--df-messenger-font-color:rgba(0,0,0,.87);--df-messenger-input-box-color:#fff;--df-messenger-input-font-color:rgba(0,0,0,.87);--df-messenger-input-placeholder-font-color:#757575;--df-messenger-minimized-chat-close-icon-color:rgba(0,0,0,.87);--df-messenger-send-icon:#42a5f5;--df-messenger-user-message:#ddd;--df-messenger-chip-color:#fff;--df-messenger-chip-border-color:#e0e0e0}</style><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></head>
+  <body>
+    
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger intent="WELCOME" chat-title="Ford" agent-id="e8901840-0e9d-447b-b868-24ee6e313aa4" chat-icon="https://freepngimg.com/thumb/symbol/71395-room-icons-conversation-computer-chat-online-livechat.png" language-code="pt-br" session-id="dfMessenger-29408668" api-uri="https://dialogflow.cloud.google.com/v1/integrations/messenger/webhook"></df-messenger>
+
+    <header>
+        <nav class="navbar navbar-expand-lg top navbar-fixed-top menu" id="menu">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">ACCESS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-collapse d-lg-flex justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link homeIcon" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#dados">Dados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projeto">Projeto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#relatos">Depoimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="top home container-fluid">
+        <div class="row align-items-center pt-5 pb-5">
+            <div class="mb-5 mt-4 col mx-auto text-center "> 
+                <h1 class="pt-5 mt-2">TRANSPORTE PARA <span class="todos">TODOS</span></h1>
+                <div class="row mt-5 p-5 justify-content-center">
+                  <div class="col-md-2 col-sm-4 col-4">
+                    <button class="mb-5 btn btn-light ">
+                      <img class="p-1" src="images/psicosocial.png" alt="">
+                    </button>
+                </div>
+                <div class="col-md-2 col-sm-4 col-4">
+                  <button class="mb-5 btn btn-light ">
+                    <img class="p-1 p-sm-0" src="images/multiplas.png" alt="">
+                  </button>
+              </div>
+              <div class="col-md-2 col-sm-4 col-4">
+                <button class="mb-5 btn btn-light ">
+                  <img class="p-1" src="images/fisica.png" alt="">
+                </button>
+            </div>
+            <div class="col-md-2 col-sm-4 col-4">
+              <button class="mb-5 btn btn-light">
+                <img class="p-1" src="images/visual.png" alt="">
+              </button>
+           </div>
+           <div class="col-md-2 col-sm-4 col-4">
+            <button class="mb-5 btn btn-light ">
+              <img class="p-1" src="images/intelectual.png" alt="">
+            </button>
+        </div>
+        <div class="col-md-2 col-sm-4 col-4">
+          <button class="mb-5 btn btn-light ">
+            <img class="p-1" src="images/volume-mute.png" alt="">
+          </button>
+      </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid pt-3" id="dados">
+        <div class="row mt-5 mb-5 p-2">
+            <div class="col-lg-6 col-md-6 col-12 text-center p-5">
+                <img src="images/grafico.png" alt="" class="col-lg-6 col-12">
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 p-5">
+                <h2>Transportes acessíveis atualmente?</h2>
+                <p>Mobilidade deveria ser sinônimo de liberdade, mas para muitas pessoas com deficiência, é uma batalha diária. 🚗 Pense nisso: ao chamar um Uber ou 99, o que acontece se você precisa de um carro adaptado? A realidade é que, na maioria das vezes, essa opção simplesmente não existe.
+Cerca de 15% da população mundial tem algum tipo de deficiência. 📊
+No transporte, menos de 1% dos carros de aplicativos como Uber e 99 são adaptados para pessoas com deficiência motora. 😞
+Segundo a equipe da Uber, 8 em cada 10 pessoas com deficiência já sofreram preconceito durante seus deslocamentos pela cidade, isso só reflete ainda mais a falta de acessibilidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projeto" id="projeto">
+        <div class="container pt-5 pb-2">
+            <div class="row pb-5">
+                <div class="col-12 col-lg-7 col-md-7 pt-5">
+                    <h2>Arquivos do projetos</h2>
+                    <p>Nossa solução é descomplicada e impactante: um aplicativo que foca na acessibilidade. Quando você o utiliza, está garantindo uma experiência feita sob medida para suas necessidades. Se sua preocupação é a tranquilidade devido a uma deficiência mental, nosso app oferece viagens silenciosas. Para melhor mobilidade, temos carros espaçosos com rampas e apoios. E se você tem outras deficiências, nossa solução assegura uma viagem sem barreiras. Estamos redesenhando o cenário da mobilidade para torná-lo verdadeiramente inclusivo. </p>
+                        <button class="btn btn-light m-2">GitHub</button>
+                        <button class="btn btn-dark m-2" data-bs-toggle="modal" data-bs-target="#devOpsModal">Abordagem DevOps</button>               </div>
+                <div class="col-lg-5 col-md-5 p-5 pb-1 pt-1">
+                    <img src="images/app.png" alt="">
+                </div>
+            </div>
+          </div>
+      </div> 
+
+      <!-- Modal -->
+<div class="modal fade" id="devOpsModal" tabindex="-1" aria-labelledby="devOpsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="devOpsModalLabel">Abordagem DevOps</h5>
+		
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Desenvolvemos o projeto usando BIZZAG e TOGAF para modelagem, Azure para infraestrutura, Trello e GitHub para gestão, Oracle SQL para o banco de dados e Flutter para o frontend com design no Figma.
+No backend, optamos por Java com Spring Boot e JPA, implementando um chatbot via DialogFlow e integrando-se ao Power BI para análises de dados. Configuramos a infraestrutura com o Cisco Packet Tracer. Por último, para a divulgação da ferramenta, criamos um site com HTML5, CSS e Bootstrap, temporariamente hospedado na Netlify e editamos vídeos anteriormente publicados no Florest , e os slides no Canva.
+No link do GitHub apresenta todos os arquivos relacionados em questão.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+    <div id="relatos" class="container text-center mt-5 pt-5 mb-3">
+      <div class=" col-12">
+        <div class="titulo container col-5">  
+          <h1 class="mt-2">Relatos</h1>
+        </div>
+        
+      </div>
+      <p class="pt-5">As histórias de desafios enfrentados por pessoas com deficiência nos inspiram a tornar a mobilidade mais inclusiva e acessível para todos.</p>
+        <div class="row p-5  pt-2 pb-2">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card p-4">
+                <div class="card-body">
+                  <h5 class="card-title">99 (App)</h5>
+                  <p class="card-text">"Chamei o carro adequado para cadeirantes duas vezes e me enviram dois carros inadequados"</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card p-4">
+                <div class="card-body">
+                  <h5 class="card-title">Portal G1</h5>
+                  <p class="card-text">"Uber é processada nos EUA por falta de acessibilidade para passageiros"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row p-5 pt-2">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card p-4">
+                <div class="card-body">
+                  <h5 class="card-title">Site Helton &amp; Deus - Sociedade de advogados</h5>
+                  <p class="card-text">"Infelizmente tem sido cada vez mais comum os relatos de pessoas com deficiência e famílias, sobre motoristas de aplicativos que se recusam a levá-los, se negam a transportar equipamentos como cadeira de rodas e cancelam as viagens reiteradas vezes."</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card p-4">
+                <div class="card-body">
+                  <h5 class="card-title">MidiaMax - portal UOL</h5>
+                  <p class="card-text">"Problemas para pedir transporte por aplicativo são rotina para cadeirantes em Campo Grande."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  <footer class="text-center text-lg-start" id="contato">
+    <div class="container d-flex justify-content-center py-4">
+      <button type="button" class="btn mx-1">
+        <i><img src="images/insta.png" alt=""></i>
+      </button>
+      <button type="button" class="btn mx-1">
+        <i><img src="images/email.png" alt=""></i>
+      </button>
+      <button type="button" class="btn mx-1">
+        <i><img src="images/phone.png" alt=""></i>
+      </button>
+    </div>
+
+    <div class="text-center text-white p-3 pt-1">
+      © 2023 Copyright:
+      <a class="text-white" href="https://wwww.ALFA.com/">ALFA.com</a>
+    </div>
+  </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/messenger-internal.min.js?v=4"></script>
+  </body>
+</html>
